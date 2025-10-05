@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Korbanet</title>
+  <meta name="description" content="Korbanet">
+</head>
+
+<body>
+  <section>
+    <h1>Aida-Counter</h1>
+    <img src="aida.jpg" width="275" height="183" alt="Aida-Logo">
+    <h3 id="counter"></h3>
+
+    <script>
+      const targetDate = new Date("2026-08-13");
+      const today = new Date();
+
+      const timeDiff = targetDate - today;
+      const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+
+      document.getElementById("counter").textContent = "Noch " + daysLeft + " Tage bis Aida.";
+    </script>
+  </section>
+</body>
+
+</html>
