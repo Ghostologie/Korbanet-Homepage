@@ -39,7 +39,7 @@
       const today = new Date();
 
       const timeDiff = targetDate - today;
-      const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+      const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24) - 1);
 
       document.getElementById("counter").textContent = "Noch " + daysLeft + " Tage bis Aida.";
     </script>
